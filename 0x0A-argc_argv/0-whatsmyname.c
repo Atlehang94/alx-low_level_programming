@@ -8,9 +8,19 @@
  *
  * Return: Always 0 (Success)
  */
-int main(int argc, char *argv[])
+
+int main(int argc __attribute__((unused)), char *argv[])
 {
-	printf("%s\n", argv[0]);
-	(void)argc;
+
+	char *c;
+
+	c = argv[0];
+
+	while (*c != '\0')
+	{
+		_putchar(*c + 0);
+		c++;
+	}
+	_putchar('\n');
 	return (0);
 }
