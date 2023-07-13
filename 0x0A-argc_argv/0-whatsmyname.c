@@ -7,18 +7,14 @@
  *
  * Return: Always 0 (Success)
  */
-
 int main(int argc __attribute__((unused)), char *argv[])
 {
+	int i = 0;
 
-	char *c;
-
-	c = argv[0];
-
-	while (*c != '\0')
+	while (argv[0][i] != ('\0'))
 	{
-		_putchar(*c + 0);
-		c++;
+		_putchar(argv[0][i]);
+		i++;
 	}
 	_putchar('\n');
 	return (0);
